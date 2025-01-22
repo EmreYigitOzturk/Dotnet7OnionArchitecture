@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{96822F87-44C6-47BE-A47B-C31460F45E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet7OnionArchitecture.Domain", "Core\Dotnet7OnionArchitecture.Domain\Dotnet7OnionArchitecture.Domain.csproj", "{A1427AFA-2055-4873-8E5B-6FA7138A8841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet7OnionArchitecture.Application", "Core\Dotnet7OnionArchitecture.Application\Dotnet7OnionArchitecture.Application.csproj", "{BA3BBF2E-C4F3-4221-88AF-6151351260DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{882C344F-B755-42D8-96BC-AB4555C02608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet7OnionArchitecture.Infrastructure", "Infrastructure\Dotnet7OnionArchitecture.Infrastructure\Dotnet7OnionArchitecture.Infrastructure.csproj", "{33423D36-83A5-40C1-A15D-6F12DBC34658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet7OnionArchitecture.Persistence", "Infrastructure\Dotnet7OnionArchitecture.Persistence\Dotnet7OnionArchitecture.Persistence.csproj", "{B3634B1E-181C-43B4-A080-8CE5CC33569B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{27653661-5A60-479D-95D6-42B91C491053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet7OnionArchitecture.Api", "Presentation\Dotnet7OnionArchitecture.Api\Dotnet7OnionArchitecture.Api.csproj", "{1068E51D-3083-4EA3-B64E-4796F75EAE7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1427AFA-2055-4873-8E5B-6FA7138A8841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1427AFA-2055-4873-8E5B-6FA7138A8841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1427AFA-2055-4873-8E5B-6FA7138A8841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1427AFA-2055-4873-8E5B-6FA7138A8841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3BBF2E-C4F3-4221-88AF-6151351260DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3BBF2E-C4F3-4221-88AF-6151351260DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3BBF2E-C4F3-4221-88AF-6151351260DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3BBF2E-C4F3-4221-88AF-6151351260DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33423D36-83A5-40C1-A15D-6F12DBC34658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33423D36-83A5-40C1-A15D-6F12DBC34658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33423D36-83A5-40C1-A15D-6F12DBC34658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33423D36-83A5-40C1-A15D-6F12DBC34658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3634B1E-181C-43B4-A080-8CE5CC33569B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3634B1E-181C-43B4-A080-8CE5CC33569B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3634B1E-181C-43B4-A080-8CE5CC33569B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3634B1E-181C-43B4-A080-8CE5CC33569B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1068E51D-3083-4EA3-B64E-4796F75EAE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1068E51D-3083-4EA3-B64E-4796F75EAE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1068E51D-3083-4EA3-B64E-4796F75EAE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1068E51D-3083-4EA3-B64E-4796F75EAE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1427AFA-2055-4873-8E5B-6FA7138A8841} = {96822F87-44C6-47BE-A47B-C31460F45E8D}
+		{BA3BBF2E-C4F3-4221-88AF-6151351260DB} = {96822F87-44C6-47BE-A47B-C31460F45E8D}
+		{33423D36-83A5-40C1-A15D-6F12DBC34658} = {882C344F-B755-42D8-96BC-AB4555C02608}
+		{B3634B1E-181C-43B4-A080-8CE5CC33569B} = {882C344F-B755-42D8-96BC-AB4555C02608}
+		{1068E51D-3083-4EA3-B64E-4796F75EAE7E} = {27653661-5A60-479D-95D6-42B91C491053}
+	EndGlobalSection
+EndGlobal
