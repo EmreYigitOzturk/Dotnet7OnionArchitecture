@@ -9,17 +9,7 @@ namespace Dotnet7OnionArchitecture.Domain.Entities
 {
     public class Category : EntityBase
     {
-        public Category()
-        {
-            
-        }
-
-        public Category(int parentId, string name, int priority)
-        {
-            ParentId = parentId;
-            Name = name;
-            Priority = priority;
-        }
+        
 
         public required int ParentId { get; set; }
         public required string Name { get; set; }
