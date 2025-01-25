@@ -5,15 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Dotnet7OnionArchitecture.Application.Interfaces.Repositories;
 using Dotnet7OnionArchitecture.Domain.Common;
+using Dotnet7OnionArchitecture.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dotnet7OnionArchitecture.Persistence.Repositories
 {
     public class WriteRepository<T> : IWriteRepository<T> where T : class, IEntitiyBase, new()
     {
-        private readonly DbContext dbContext;
+        private readonly ApplicationDbContext dbContext;
 
-        public WriteRepository(DbContext dbContext)
+        public WriteRepository(ApplicationDbContext dbContext)
         {
             this.dbContext = dbContext;
         }

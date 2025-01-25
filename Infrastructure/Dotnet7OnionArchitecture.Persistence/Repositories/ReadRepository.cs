@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dotnet7OnionArchitecture.Application.Interfaces.Repositories;
 using Dotnet7OnionArchitecture.Domain.Common;
+using Dotnet7OnionArchitecture.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
@@ -13,9 +14,9 @@ namespace Dotnet7OnionArchitecture.Persistence.Repositories
 {
     public class ReadRepository<T> : IReadRepository<T> where T : class,IEntitiyBase , new()
     {
-        private readonly DbContext dbContext;
+        private readonly ApplicationDbContext dbContext;
 
-        public ReadRepository(DbContext dbContext)
+        public ReadRepository(ApplicationDbContext dbContext)
         {
             this.dbContext = dbContext;
         }

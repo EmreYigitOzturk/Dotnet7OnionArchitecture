@@ -11,9 +11,9 @@ namespace Dotnet7OnionArchitecture.Domain.Entities
     {
         
 
-        public required int ParentId { get; set; }
-        public required string Name { get; set; }
-        public required int Priority { get; set; }
+        public  int ParentId { get; set; }
+        public string Name { get; set; }
+        public int Priority { get; set; }
 
         public ICollection<Detail> Details { get; set; }
 

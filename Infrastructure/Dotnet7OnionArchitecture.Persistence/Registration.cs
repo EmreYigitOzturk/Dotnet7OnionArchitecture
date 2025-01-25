@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dotnet7OnionArchitecture.Application.Interfaces.Repositories;
+using Dotnet7OnionArchitecture.Application.Interfaces.UnitOfWorks;
 using Dotnet7OnionArchitecture.Persistence.Context;
 using Dotnet7OnionArchitecture.Persistence.Repositories;
+using Dotnet7OnionArchitecture.Persistence.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +23,8 @@ namespace Dotnet7OnionArchitecture.Persistence
             
             services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
             services.AddScoped(typeof(IWriteRepository<>), typeof(WriteRepository<>));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         }
 
