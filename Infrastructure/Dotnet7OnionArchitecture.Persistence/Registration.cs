@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dotnet7OnionArchitecture.Application.Interfaces.Repositories;
 using Dotnet7OnionArchitecture.Persistence.Context;
+using Dotnet7OnionArchitecture.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +18,9 @@ namespace Dotnet7OnionArchitecture.Persistence
         {
             services.AddDbContext<ApplicationDbContext>(opt =>
                 opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            
+            services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
+
 
         }
 
