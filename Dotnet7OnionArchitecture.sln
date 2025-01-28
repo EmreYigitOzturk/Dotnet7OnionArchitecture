@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{96822F87-44C6-47BE-A47B-C31460F45E8D}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{27653661-5A60-479D-95D6-42B91C491053}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet7OnionArchitecture.Api", "Presentation\Dotnet7OnionArchitecture.Api\Dotnet7OnionArchitecture.Api.csproj", "{1068E51D-3083-4EA3-B64E-4796F75EAE7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet7OnionArchitecture.AutoMapper", "Core\Dotnet7OnionArchitecture.AutoMapper\Dotnet7OnionArchitecture.AutoMapper.csproj", "{F48AAB84-28AA-4642-9640-FD4D671FCB4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{1068E51D-3083-4EA3-B64E-4796F75EAE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1068E51D-3083-4EA3-B64E-4796F75EAE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1068E51D-3083-4EA3-B64E-4796F75EAE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48AAB84-28AA-4642-9640-FD4D671FCB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48AAB84-28AA-4642-9640-FD4D671FCB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48AAB84-28AA-4642-9640-FD4D671FCB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48AAB84-28AA-4642-9640-FD4D671FCB4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{33423D36-83A5-40C1-A15D-6F12DBC34658} = {882C344F-B755-42D8-96BC-AB4555C02608}
 		{B3634B1E-181C-43B4-A080-8CE5CC33569B} = {882C344F-B755-42D8-96BC-AB4555C02608}
 		{1068E51D-3083-4EA3-B64E-4796F75EAE7E} = {27653661-5A60-479D-95D6-42B91C491053}
+		{F48AAB84-28AA-4642-9640-FD4D671FCB4C} = {96822F87-44C6-47BE-A47B-C31460F45E8D}
 	EndGlobalSection
 EndGlobal

@@ -1,3 +1,4 @@
+using Dotnet7OnionArchitecture.Application;
 using Dotnet7OnionArchitecture.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Configuration
     .AddJsonFile($"appsettings.{env.EnvironmentName}",optional: true);
 
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddApplication();
 
 var app = builder.Build();
 
